@@ -1,31 +1,11 @@
-# React + TypeScript + Vite
+# React + TypeScript + ViteCesium可视化tiff瓦片案例
+## Getting Started
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+---
+1. 安装[GeoServer](https://sourceforge.net/projects/geoserver/files/GeoServer/2.24.1/GeoServer-2.24.1-winsetup.exe/download)
+2. 使用[geoserver发布wms服务和wmts服务，并在cesium上进行调用](https://www.twblogs.net/a/5ef676bab30d2a4cfd4c46be/?lang=zh-cn)
+3. 安装当前项目需要的依赖并启动项目
+```shell
+pnpm install
+pnpm run dev 
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# cesium-view-demo
